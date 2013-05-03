@@ -18,7 +18,6 @@ import me.prettyprint.hector.api.factory.HFactory;
  */
 public class App {
 	public static void main(String[] args) throws InterruptedException {
-		Thread.sleep(30000);
 		Cluster myCluster = HFactory.getOrCreateCluster("Geert Cluster", "localhost:9160");
 		ColumnFamilyDefinition cfDef = HFactory.createColumnFamilyDefinition("MyKeyspace", "ColumnFamilyName", ComparatorType.BYTESTYPE);
 
